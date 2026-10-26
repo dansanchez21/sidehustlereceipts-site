@@ -39,3 +39,21 @@ footer{text-align:center;margin-top:22px;font-size:11px;letter-spacing:1px}
 footer p{margin:6px 0 0}
 .barcode{height:44px;margin:0 auto;max-width:260px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 7px,transparent 7px 9px,var(--ink) 9px 10px,transparent 10px 13px,var(--ink) 13px 17px,transparent 17px 19px)}
 @media (min-width:600px){body{padding-top:56px}.receipt{padding:40px 34px 46px}}
+/* Free Hustle Math sheet: yellow/green look from the book cover */
+:root{--yellow:#FFD21F;--dgreen:#0B6B3B}
+.cta{display:block;text-align:center;background:var(--yellow);color:var(--ink);text-decoration:none;border:3px solid var(--ink);border-radius:8px;padding:16px 14px 14px;margin:4px 0 0;box-shadow:5px 5px 0 var(--dgreen);transition:transform .08s,box-shadow .08s}
+.cta:hover,.cta:focus-visible{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--dgreen);outline:none}
+.cta .big{display:block;font-family:"Archivo Black",Inter,sans-serif;font-size:clamp(21px,6vw,26px);line-height:1.1;letter-spacing:-.3px}
+.cta .small{display:block;font-weight:700;font-size:13px;margin-top:6px;color:var(--dgreen)}
+.cta--green{background:var(--dgreen);color:#fff;box-shadow:5px 5px 0 var(--yellow)}
+.cta--green .small{color:var(--yellow)}
+.cta--green:hover,.cta--green:focus-visible{box-shadow:3px 3px 0 var(--yellow)}
+.lead{font-family:Inter,sans-serif;font-size:17px;line-height:1.5;font-weight:500;margin:0 0 4px}
+.tabs{list-style:none;padding:0;margin:0}
+.tabs li{border-bottom:2px dotted var(--gray);padding:10px 0}
+.tabs li:last-child{border-bottom:0}
+.tabs b{display:block;font-size:16px}
+.tabs span{display:block;font-family:Inter,sans-serif;font-size:14px;color:#444;margin-top:2px}
+.tabs .n{display:inline-block;font-family:inherit;color:var(--ink);margin-top:0;background:var(--yellow);border:2px solid var(--ink);border-radius:4px;padding:0 6px;margin-right:6px;font-size:13px}
+.warn{background:var(--yellow);border:2px solid var(--ink);padding:12px 12px;font-weight:700;font-size:14px;line-height:1.45;margin:0}
+.back{display:inline-block;margin-top:4px;color:var(--dgreen);font-weight:700}
